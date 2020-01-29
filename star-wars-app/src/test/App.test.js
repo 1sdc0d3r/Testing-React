@@ -17,7 +17,11 @@ describe("<App />", () => {
     });
     it("previous button fires", async () => {
       //   wrapper.getByTestId("prevBtn");
-      wrapper.getByText(/previous/i);
+      expect(wrapper.getByText(/previous/i));
+      // expect(wrapper.getByText(/notPrevious/i));
+      // wrapper.findByText(/previous/i);
+      // toHaveTextContent(/previous/i);
+      // expect(wrapper.findByText(/notHereAtall/i));
       //   expect(getByTestId("prevBtn")).toBe(/previous/i);
       // expect(getByTestId("prevBtn")).toHaveTextContent(/previous/i);
       //   rtl.fireEvent(getByText(/previous/i));
